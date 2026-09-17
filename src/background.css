@@ -1,0 +1,33 @@
+.below-hero {
+  position: relative;
+  isolation: isolate;
+  background: #101110;
+}
+.fiber-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+.fiber-viewport {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  width: 100%;
+  opacity: .8;
+}
+.fiber-viewport::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #101110 0%, transparent 22%, #10111055 100%);
+}
+.below-hero .expertise-band {
+  background: #191b1866;
+}
+.below-hero .expertise-card {
+  background: #151813b3;
+}
+.below-hero .expertise-card:hover {
+  background: #1d2118e6;
+}

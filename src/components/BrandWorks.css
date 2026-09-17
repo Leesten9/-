@@ -1,0 +1,30 @@
+.work .brand-grid{grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:380px}
+.work .brand-grid .project:nth-child(n){grid-column:auto;grid-row:auto}
+.brand-grid .brand-tile{display:flex;flex-direction:column;justify-content:space-between;padding:30px;color:white;text-align:left;transition:transform .25s,border-color .25s}
+.brand-grid .brand-tile:hover{transform:translateY(-4px);border-color:#fff9}
+.brand-tile-top{display:flex;align-items:center;justify-content:space-between;width:100%;font-size:11px}
+.brand-tile-title{display:flex;flex-direction:column;gap:14px;width:100%;min-width:0}
+.brand-tile-title strong{font-size:27px;font-weight:600;overflow-wrap:anywhere}
+.brand-tile-title span{font-size:21px}
+.brand-tile-bottom{font-size:11px;color:#fff}
+.brand-window-heading{padding:38px 32px;color:white}
+.brand-window-heading>span{font-size:10px}
+.brand-window-heading h2{font-size:36px;overflow-wrap:anywhere;margin:22px 0 10px}
+.brand-window-heading p{margin:0;font-size:20px}
+.brand-tabs{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--border);padding:0 24px}
+.brand-tabs button{background:transparent;padding:20px 8px;display:flex;align-items:center;justify-content:center;gap:10px;border-bottom:2px solid transparent;color:#b9bdc3}
+.brand-tabs button[aria-selected=true]{color:var(--lime);border-color:var(--lime)}
+.brand-tabs button:hover{background:#ffffff08}
+.brand-panel{padding:26px 32px}
+.brand-panel-label{font-size:12px;color:#b9bdc3;margin:0}
+.brand-empty{min-height:250px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#b9bdc3;gap:12px}
+.brand-empty h3{font-size:21px;font-weight:500;color:#eee;margin:6px 0 0}
+.brand-empty p,.brand-empty small{font-size:12px;margin:0}
+.brand-empty small{font-size:9px;margin-top:14px}
+.brand-gallery{display:flex;gap:20px;overflow-x:auto;align-items:flex-start;padding:22px 0 15px;scroll-snap-type:x proximity}
+.brand-gallery figure{flex:0 0 min(340px,85%);min-width:0;margin:0;scroll-snap-align:start}
+.brand-gallery a{display:block}
+.brand-gallery img{display:block;width:100%;height:auto;object-fit:contain;background:#ffffff08;border-radius:6px}
+.brand-gallery figcaption{font-size:12px;line-height:1.6;color:#c4b5c1;margin-top:10px;overflow-wrap:anywhere}
+@media(max-width:1100px){.brand-grid .brand-tile{padding:23px}.brand-tile-title strong{font-size:20px}}
+@media(max-width:700px){.work .brand-grid{grid-template-columns:1fr;grid-auto-rows:280px}.brand-tile-title strong{font-size:26px}.brand-window-heading{padding:35px 22px}.brand-window-heading h2{font-size:27px}.brand-tabs{padding:0 12px}.brand-tabs button{font-size:12px}.brand-panel{padding:22px}}

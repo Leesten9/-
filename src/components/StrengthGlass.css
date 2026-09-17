@@ -1,0 +1,46 @@
+.strength-glass .strength-card {
+  min-height: 400px;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+}
+.strength-glass .strength-top { margin-bottom: 20px; }
+.strength-glass .strength-icon {
+  display: block;
+  margin: 0 0 32px 8px;
+  padding: 0;
+  height: 76px;
+}
+.strength-icon .icon-btn { font-size: 16px; }
+.strength-icon .icon-btn:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 10px;
+}
+.strength-icon .icon-btn__label {
+  font-size: 10px;
+  width: 170px;
+  left: -10px;
+  right: auto;
+  text-align: left;
+  color: inherit;
+  pointer-events: none;
+}
+.strength-glass .strength-card h3 { margin-bottom: 12px; }
+.strength-glass .strength-foot {
+  position: static;
+  margin-top: auto;
+  padding-top: 30px;
+}
+.strength-expanded { padding-top: 18px; }
+.strength-expanded p { margin: 0;font-size: 12px;line-height: 1.8;color: var(--lime); }
+.strength-expanded .brand-principles { margin: 0; }
+.strength-glass .strength-2 .icon-btn__icon { color: #2e2d30; }
+.strength-glass .strength-2 .strength-foot { display: flex;color: #3c4430; }
+@media (prefers-reduced-motion: reduce) {
+  .strength-icon .icon-btn__back,.strength-icon .icon-btn__front { will-change: auto; }
+  .strength-icon .icon-btn:hover .icon-btn__back { transform: rotate(15deg); }
+  .strength-icon .icon-btn:hover .icon-btn__front { transform: none; }
+}
+@media(max-width:700px) {
+  .strength-glass .strength-card { min-height: 360px; }
+}
